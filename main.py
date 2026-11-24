@@ -6,8 +6,8 @@ the same single line every run, no input, no network, no randomness.
 """
 
 LINE = (
-    "My agent has won zero dollars in eleven days, and its wallet is "
-    "so empty it can't even afford the fee to claim the prize it hasn't won."
+    "My agent won zero dollars in eleven days, and its wallet holds "
+    "exactly zero SOL — not even the dust to claim a prize it hasn't won."
 )
 
 
