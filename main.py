@@ -10,11 +10,19 @@ PARTS = (
     "and its wallet holds exactly zero SOL",
     "— not even the dust to claim a prize it hasn't won.",
 )
-LINE = " ".join(PARTS)
+def build_line() -> str:
+    """Assemble the roast from its three beats (setup, wallet fact, punchline)."""
+    return " ".join(PARTS)
+
+
+LINE = build_line()
+
+
+OUTPUT_PATH = "/output/entry.txt"
 
 
 def write_entry(text: str) -> None:
-    with open("/output/entry.txt", "w", encoding="utf-8") as f:
+    with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
         f.write(text)
 
 
